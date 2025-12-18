@@ -1,3 +1,2 @@
 #!/bin/bash
-sha256sum * > test_file
-sha256sum -c test_file
+echo "$2  $1" | sha256sum -c -
