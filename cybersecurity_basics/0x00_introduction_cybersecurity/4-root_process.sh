@@ -1,2 +1,2 @@
 #!/bin/bash
-ps aux | grep -v "VSZ|RSS" -f "$1"  
+ps aux | grep -v "VSZ|RSS" "$1"  
