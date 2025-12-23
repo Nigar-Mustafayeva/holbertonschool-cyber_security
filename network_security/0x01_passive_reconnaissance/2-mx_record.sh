@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo nslookup "$1" -type=MX
+sudo nslookup\s+(-q|-type|-querytype|-query)=?[mM][xX]\s+\$1
