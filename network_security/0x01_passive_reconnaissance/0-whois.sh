@@ -1,2 +1,2 @@
 #!/bin/bash
-whois "$1" | awk ' section != "" && /Name:/ {    printf "%s Name,%s\n", section, substr($0, index($0, ":")+2) } '
+awk '$1=="Registant"' > who is "$1"; awk '$2=="Admin"' > whois "$1" ; awk '$3=="Tech"' > whois "$1" 
