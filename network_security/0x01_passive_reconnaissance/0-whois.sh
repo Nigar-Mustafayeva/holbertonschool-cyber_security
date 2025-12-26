@@ -1,2 +1,2 @@
 #!/bin/bash
-whois $1 | awk '/(Registrant|Admin|Tech)/ && /:/{f=$1" "$2; sub(/^[^:]+:[ \t]*/,""); if(f~/Street$/) $0=$0" "; if(f~/Ext$/) f=f":"; printf "%s,%s\n", f, $0}'
+whois $1 | awk -F': ' '/^(Registrant|Admin|Tech) (Name|Organization|Street|City|State\/Province|Postal Code|Country|Phone|Phone Ext|Email):/{f=$1; v=$2; if(f~/Street$/) v=v" "; if(f~/Ext$/) f=f":"; sub(/:$/,"",f); printf "%s,%s\n", f, v}'
