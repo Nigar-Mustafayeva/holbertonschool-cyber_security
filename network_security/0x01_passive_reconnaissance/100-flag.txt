@@ -1,4 +1,4 @@
-"Holberton Sec Lab - 781ed233735cafbd5e76b1966f0a15bd"                                                                                                                                  
+Holberton Sec Lab - 781ed233735cafbd5e76b1966f0a15bd                                                                                                                                  
 ~                                                                                                                                                                                                                                           
 ~                                                                                                                                                                                                                                           
 ~                                                                                                                                                                                                                                           
