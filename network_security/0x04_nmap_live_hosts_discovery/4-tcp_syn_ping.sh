@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo nmap -sn -PS $1
+sudo nmap -p 22, 80, 443 -sn -PS $1
