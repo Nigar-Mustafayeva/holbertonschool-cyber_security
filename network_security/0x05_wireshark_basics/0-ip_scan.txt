@@ -1,1 +1,1 @@
-ip && !(tcp || udp || icmp)
+ip.proto !=1 && ip.proto !=6 && ip.proto !=17
