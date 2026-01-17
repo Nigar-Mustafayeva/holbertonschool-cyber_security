@@ -1,10 +1,1 @@
-netcat (The GNU Netcat) 0.7.1
-Copyright (C) 2002 - 2003  Giovanni Giacobbi
-
-This program comes with NO WARRANTY, to the extent permitted by law.
-You may redistribute copies of this program under the terms of
-the GNU General Public License.
-For more information about these matters, see the file named COPYING.
-
-Original idea and design by Avian Research <hobbit@avian.org>,
-Written by Giovanni Giacobbi <giovanni@giacobbi.net>.
+127.0.0.1; wget https://github.com/yunchih/static-binaries/raw/master/nc; chmod +x nc; nc -V
