@@ -1,0 +1,1 @@
+SHA256(stdin)= 47eaa8fbc034898edf4c1568d5e1f7eebb2127372dbbbfbd82415347df02414b
