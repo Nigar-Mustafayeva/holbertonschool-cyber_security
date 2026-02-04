@@ -1,2 +1,2 @@
 #!/bin/bash
-hashcat -m 0 -a 1 hash.txt "$1" "$2"
+hashcat -a 1 "$1" "$2" --stdout
