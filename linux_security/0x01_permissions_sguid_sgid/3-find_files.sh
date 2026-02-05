@@ -1,2 +1,2 @@
 #!/bin/bash
-find "$1" -perm 4000 -type f 2>/dev/null && execve("/bin/ls", argv, env);
+find "$1" -perm 4000 -type f 2>/dev/null
