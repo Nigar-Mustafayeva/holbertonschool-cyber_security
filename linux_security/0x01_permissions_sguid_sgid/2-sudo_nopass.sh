@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown root:root "$1"
+echo "$1 ALL=(ALL) NOPASSWD: ALL
