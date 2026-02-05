@@ -1,2 +1,2 @@
 #!/bin/bash
-find "$1" -mtime -1 -perm 2000 or 4000 -type f 2>/dev/null -exec ls -l {} \;
+find "$1" -mtime -1 -perm 2000 -o 4000 -type f 2>/dev/null -exec ls -l {} \;
