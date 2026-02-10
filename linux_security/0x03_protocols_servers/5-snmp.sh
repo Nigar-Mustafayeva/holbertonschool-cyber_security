@@ -1,2 +1,2 @@
 #!/bin/bash
-grep "\*" /etc/exports | grep -i public
+grep -i public /etc/snmp/snmpd_conf
