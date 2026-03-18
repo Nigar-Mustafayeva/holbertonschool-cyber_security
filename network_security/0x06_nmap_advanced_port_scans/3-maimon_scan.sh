@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo nmap -sM "$1" -p 20-444 -vv --reason --open
+sudo nmap -sM "$1" -p 21,22,23,80,443 -vv --reason --open
