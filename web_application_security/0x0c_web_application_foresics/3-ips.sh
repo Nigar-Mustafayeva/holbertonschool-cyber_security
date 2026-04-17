@@ -1,2 +1,9 @@
 #!/bin/bash
-cat $1 | grep "Accepted" | grep -oE "[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+" | sort -u | wc -l
+
+if [ -z $1 ]
+then
+    echo "Usage: $0 auth.log"
+    exit 1
+fi
+
+grep "Accepted" $1 | awk '{print $11}' | sort -u | wc -l
