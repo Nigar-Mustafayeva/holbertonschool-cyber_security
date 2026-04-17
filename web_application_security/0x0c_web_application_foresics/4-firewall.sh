@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '/iptables/{c++}END{print c}' $1
+grep -c "iptables" auth.log
