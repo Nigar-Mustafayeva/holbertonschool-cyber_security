@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -F "iptables" $1 | wc -l
+awk '/iptables/{c++}END{print c}' $1
