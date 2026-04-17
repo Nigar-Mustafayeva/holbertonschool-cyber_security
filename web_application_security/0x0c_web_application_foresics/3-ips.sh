@@ -1,2 +1,2 @@
 #!/bin/bash
-awk '/Accepted/ {print $11}' $1 | sort -u | wc -l
+awk '/Accepted/ {print $0}' auth.log | head
