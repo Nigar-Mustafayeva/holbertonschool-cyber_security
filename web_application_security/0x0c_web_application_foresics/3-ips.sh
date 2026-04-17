@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-grep '" 200 ' auth.log | awk '{print $1}' | sort -u | wc -l
+grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}' auth.log | sort -u | wc -l
