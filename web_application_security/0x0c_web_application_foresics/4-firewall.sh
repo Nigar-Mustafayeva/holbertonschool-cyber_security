@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-grep -i "iptables.*ADD\|iptables.*INSERT\|ufw.*allow" auth.log | wc -l
+#!/bin/bash
+grep -i "iptables\|ufw\|firewall" $1 | wc -l
