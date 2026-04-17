@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -i "iptables\|ufw\|firewall" $1 | wc -l
+grep -F "iptables" $1 | wc -l
