@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-grep "Accepted password" auth.log | awk '{print $11}' | sort -u | wc -l
+grep '" 200 ' auth.log | awk '{print $1}' | sort -u | wc -l
