@@ -1,2 +1,2 @@
 #!/bin/bash
-grep "useradd" auth.log | awk -F'name=' '{print $2}' | sort -u | paste -sd,
+grep "useradd" auth.log | sed 's/.*name=//' | cut -d',' -f1 | sort -u | paste -sd,
