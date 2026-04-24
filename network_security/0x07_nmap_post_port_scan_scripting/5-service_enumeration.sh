@@ -1,2 +1,2 @@
 #!/bin/bash
-nmap -sV -A --script "banner,vulners" "ssl-enum-ciphers smb-enum-domains" -oN service_enumeration_results.txt
+nmap -sV -A --script vulners "banner,ssl-enum-ciphers,default,smb-enum-domains" $1 -oN service_enumeration_results.txt
