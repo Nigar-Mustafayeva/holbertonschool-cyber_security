@@ -13,5 +13,11 @@ def post_request(url, body_params = {})
 
   puts "Response status: #{response.code} #{response.message}"
   puts "Response body:"
-  puts JSON.pretty_generate(JSON.parse(response.body))
+
+  parsed = JSON.parse(response.body)
+  if parsed.empty?
+    puts "{}"
+  else
+    puts JSON.pretty_generate(parsed)
+  end
 end
