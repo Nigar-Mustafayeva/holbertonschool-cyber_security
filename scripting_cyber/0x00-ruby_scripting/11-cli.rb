@@ -21,6 +21,7 @@ end
 
 def list_tasks
   tasks = load_tasks
+  puts "Tasks:"
   tasks.each_with_index do |task, index|
     puts "#{index + 1}. #{task}"
   end
